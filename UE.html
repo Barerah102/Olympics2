@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympics Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="logoo.png" alt="Olympics Logo" width="50" height="50" class="img-fluid">
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#games">Games</a></li>
+                <li class="nav-item"><a class="nav-link" href="athletes.html" target="_self">Athletes</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#news">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html" target="_self">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="upcoming-events">
+    <h2><i>Upcoming Events</i></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Event</th>
+                <th>Category</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>July 28, 2024</td>
+                <td>Men's Basketball Preliminary Round</td>
+                <td>Basketball</td>
+                <td>Accor Arena</td>
+            </tr>
+            <tr>
+                <td>July 29, 2024</td>
+                <td>Women's Football Quarter-finals</td>
+                <td>Football</td>
+                <td>Parc des Princes</td>
+            </tr>
+            <tr>
+                <td>July 30, 2024</td>
+                <td>Men's Cycling Road Race</td>
+                <td>Cycling</td>
+                <td>Champs-Élysées</td>
+            </tr>
+            <tr>
+                <td>July 31, 2024</td>
+                <td>Women's 100m Final</td>
+                <td>Athletics</td>
+                <td>Stade de France</td>
+            </tr>
+            <tr>
+                <td>August 1, 2024</td>
+                <td>Men's Weightlifting 81kg Final</td>
+                <td>Weightlifting</td>
+                <td>Paris Expo Porte de Versailles</td>
+            </tr>
+            <tr>
+                <td>August 2, 2024</td>
+                <td>Women's Tennis Singles Final</td>
+                <td>Tennis</td>
+                <td>Roland Garros</td>
+            </tr>
+            <tr>
+                <td>August 4, 2024</td>
+                <td>Men's 100m Final</td>
+                <td>Athletics</td>
+                <td>Stade de France</td>
+            </tr>
+            <tr>
+                <td>August 5, 2024</td>
+                <td>Women's Volleyball Semi-finals</td>
+                <td>Volleyball</td>
+                <td>Le Bourget</td>
+            </tr>
+            <tr>
+                <td>August 6, 2024</td>
+                <td>Men's Boxing Flyweight Final</td>
+                <td>Boxing</td>
+                <td>North Paris Arena</td>
+            </tr>
+            <tr>
+                <td>August 8, 2024</td>
+                <td>Men's Football Final</td>
+                <td>Football</td>
+                <td>Stade de France</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<!-- footer starts -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Logo & About -->
+            <div class="col-md-4 text-center text-md-start">
+               <h2 style="font-weight: bold; color: #E63946;">OLYMPICS</h2>
+                <p>Inspiring Excellence, Unity & Passion.</p>
+            </div>
+
+            <!-- Navigation -->
+            <div class="col-md-4 text-center">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="gallery.html" target="_self">Gallery</a></li>
+                    <li><a href="faq.html" target="_self">FAQ</a></li>
+                    <li><a href="aboutus.html" target="_self">About Us</a></li>
+                    <li><a href="records.html" target="_self">Olympics Records</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Socials -->
+            <div class="col-md-4 text-center text-md-end">
+                <h5>Contact Us</h5>
+                <p>Email: info@olympics.com</p>
+                <p>Phone: +123 456 7890</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/olympics" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/Olympics" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/olympics" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center">
+            <p class="mb-0">&copy; 2024 Olympics. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+<style>
+body {
+    background: linear-gradient(to bottom, hsl(212, 22%, 25%), #b3d9ff); /* Light blue gradient */
+    font-family: 'Poppins', Times, serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.upcoming-events {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00274d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+}
+
+thead {
+    background-color: #00274d;
+    color: rgb(250, 246, 246);
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+tbody tr:hover {
+    background-color: #f4f4f4;
+}
+     /* Sticky Navbar */
+     .navbar {
+            background-color: #f8fafc;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: 0.3s;
+            padding: 10px 20px;
+            
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #E63946;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+ /* footer start */
+ .footer {
+            background: #001247;
+            color: white;
+            padding: 40px 0;
+            font-size: 14px;
+            
+        }
+        .footer h5 {
+            color: #E63946;
+            font-weight: bold;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .footer a:hover {
+            color: #E63946;
+            text-decoration: underline;
+        }
+        .social-icons a {
+            font-size: 20px;
+            margin: 0 10px;
+            color: white;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: #E63946;
+        }
+</style>

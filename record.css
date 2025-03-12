@@ -1,0 +1,212 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    background-color: #003366;
+    padding: 20px 50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.hero {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/a/af/Olympic_flag.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 30px 0;
+    color: #003366;
+    position: relative;
+    /* margin-top: 30px; */
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.history-section {
+    /* padding: 10px; */
+    text-align: center;
+}
+
+.history-section h2 {
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.history-section p {
+    font-size: 18px;
+    color: #555;
+}
+
+.records {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.record-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.record-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.record-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.record-image img:hover {
+    transform: scale(1.1);
+}
+
+.record-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.record-content h3 {
+    font-size: 28px;
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+.record-content p {
+    font-size: 16px;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: #fff;
+    font-size: 14px;
+}
+.record-image {
+    width: 100%;
+    height: 500px; /* Slightly increased for better proportions */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* No extra space */
+    border-radius: 10px; /* Smooth rounded corners */
+}
+
+.record-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Full coverage without distortion */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.record-image img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+     /* Sticky Navbar */
+     .navbar {
+        background-color: #f8fafc;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        transition: 0.3s;
+        padding: 10px 20px;
+        
+    }
+
+    .navbar-brand, .navbar-nav .nav-link {
+        color: #E63946;
+        font-size: 1.2rem;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+
+/* footer start */
+.footer {
+    background: #001247;
+    color: white;
+    padding: 40px 0;
+    font-size: 14px;
+    
+}
+.footer h5 {
+    color: #E63946;
+    font-weight: bold;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer a:hover {
+    color: #E63946;
+    text-decoration: underline;
+}
+.social-icons a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+    transition: 0.3s;
+}
+.social-icons a:hover {
+    color: #E63946;
+}
+
