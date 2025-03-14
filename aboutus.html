@@ -12,8 +12,36 @@
     <style>
         /* Base Styles */
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+            
+        }
+        .about-us {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .about-us h1 {
+            font-size: 2.5rem;
+            color: #001247;
+        }
+
+        .about-us h2 {
+            color: #001247;
+        }
+
+        .about-us p {
+            font-size: 1.1rem;
+            color: #000000;
+        }
+
+        .about-us .lead {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .about-us img {
+            max-width: 100%;
+            border-radius: 8px;
         }
         .footer {
             background: #001247;
@@ -44,116 +72,76 @@
         .social-icons a:hover {
             color: #E63946;
         }
-        h1, h2, h3 {
-            color: #333;
-        }
-
-        p {
-            color: #555;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-
-        .navbar ul li a {
-            text-decoration: none;
-            color: #D2042D; /* Cherry Red Text */
-            font-size: 25px;
-            font-weight: 600;
-            transition: 0.3s;
-            padding: 8px 12px;
-            border-radius: 5px;
-            text-align: end;
-        }
-        .navbar ul li a:hover {
-            background-color: #D2042D;
-            color: white;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        /* Footer */
-        .footer {
-            background-color: #002147;
-            color: white;
-            padding: 20px 0;
+        h3{
             text-align: center;
+            color: #E63946;
+            font-family: 'Poppins', sans-serif;
+            font-size: xx-large;
+            font-weight: 500px;
         }
-        /* About Section Styles */
-        .about-us {
-            background-color: #f8f9fa;
-            padding: 50px 0;
+                /* Sticky Navbar */
+                .navbar {
+            background-color: #f8fafc;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: 0.3s;
+            padding: 10px 20px;
+            
         }
-
-        .about-us h1 {
-            font-size: 2.5rem;
-            color: #001247;
-        }
-
-        .about-us h2 {
-            color: #001247;
-        }
-
-        .about-us p {
-            font-size: 1.1rem;
-            color: #000000;
-        }
-
-        .about-us .lead {
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #E63946;
             font-size: 1.2rem;
-            font-weight: 300;
+            font-weight: bold;
+            transition: all 0.3s ease;
         }
 
-        .about-us img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
+        .navbar {
+    padding: 10px 20px;
+}
 
-        /* Footer Styles */
-        .footer {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-        }
+.logo-left {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
 
-        .footer a {
-            color: #ddd;
-            text-decoration: none;
-        }
+.navbar-nav {
+    margin-left: auto;
+}
+strong {
+    color: #E63946; /* Red color */
+}
 
-        .footer a:hover {
-            text-decoration: underline;
-        }
 
-        /* Media Queries */
-        @media (max-width: 768px) {
-            .navbar-nav {
-                text-align: center;
-            }
-        }
     </style>
 </head>
-
 <body>
-    
-     <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logoo.png" alt="Olympics Logo" width="50" height="50" class="img-fluid">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#games">Games</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#athletes">Athletes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faq.html" target="_self">FAQ</a></li>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">  
+                 
+                        <li class="nav-item"><a class="nav-link" href="index.html" target="_self">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html" target="_self">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="game.html" target="_self">Games</a></li>
+                        <li class="nav-item"><a class="nav-link" href="athletes.html" target="_self">Athletes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="records.html" target="_self">Records</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html" target="_self">FAQ</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    <br><br>
+    <h3>ABOUT OLYMPICS</h3>
     <section class="about-us">
         <div class="container">
             <div class="row">
@@ -165,7 +153,7 @@
                     </p>
                 </div>
                 <div class="col-lg-6 col-md-12 mb-4">
-                    <img src="fire.jpg" class="img-fluid rounded" alt="Olympic Games" style="height: 300px; width: 500px;">
+                    <img src="img/fire.jpg" class="img-fluid rounded" alt="Olympic Games" style="height: 300px; width: 500px;">
                 </div>
             </div>
 
@@ -205,49 +193,51 @@
             </div>
 
             <div class="text-center mt-5">
-                <h3>Join Us in Celebrating Human Achievement</h3>
+                <h4>Join Us in Celebrating Human Achievement</h4>
                 <p>Together, we are part of Olympic history. Every athlete, every moment, every medal — all contribute to a legacy that inspires future generations.</p>
             </div>
         </div>
     </section>
 
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-4 text-center text-md-start">
-                <img src="logoo.png" alt="Olympics Logo" width="80">
-                <p>Inspiring Excellence, Unity & Passion.</p>
-            </div>
-
-        
-            <div class="col-md-4 text-center">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Athletes</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-4 text-center text-md-end">
-                <h5>Contact Us</h5>
-                <p>Email: info@olympics.com</p>
-                <p>Phone: +123 456 7890</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+    <!-- footer starts -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Logo & About -->
+                <div class="col-md-4 text-center text-md-start">
+                    <h2 style="font-weight: bold; color: #E63946;">OLYMPICS</h2>
+                    <p>Inspiring Excellence, Unity & Passion.</p>
+                </div>
+    
+                <!-- Navigation -->
+                <div class="col-md-4 text-center">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="gallery.html" target="_self">Gallery</a></li>
+                        <li><a href="faq.html" target="_self">FAQ</a></li>
+                        <li><a href="aboutus.html" target="_self">About Us</a></li>
+                        <li><a href="index.html#news" target="_self">News</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact & Socials -->
+                <div class="col-md-4 text-center text-md-end">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@olympics.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/olympics" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/Olympics" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/olympics" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Olympics. All Rights Reserved.</p>
+            </div>
         </div>
-        <hr>
-        <div class="text-center">
-            <p class="mb-0">&copy; 2024 Olympics. All Rights Reserved.</p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 
 
