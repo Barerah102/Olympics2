@@ -6,188 +6,50 @@
     <title>Olympics Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="logoo.png" alt="Olympics Logo" width="50" height="50" class="img-fluid">
-            </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html" target="_self">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="aboutus.html" target="_self">About us</a></li>
-                <li class="nav-item"><a class="nav-link" href="game.html" target="_self">Games</a></li>
-                <li class="nav-item"><a class="nav-link" href="athletes.html" target="_self">Athletes</a></li>
-                <li class="nav-item"><a class="nav-link" href="records.html" target="_self">Records</a></li>
-                <li class="nav-item"><a class="nav-link" href="faq.html" target="_self">FAQ</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<section class="upcoming-events">
-    <h2><i>Upcoming Events</i></h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Event</th>
-                <th>Category</th>
-                <th>Location</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>July 28, 2024</td>
-                <td>Men's Basketball Preliminary Round</td>
-                <td>Basketball</td>
-                <td>Accor Arena</td>
-            </tr>
-            <tr>
-                <td>July 29, 2024</td>
-                <td>Women's Football Quarter-finals</td>
-                <td>Football</td>
-                <td>Parc des Princes</td>
-            </tr>
-            <tr>
-                <td>July 30, 2024</td>
-                <td>Men's Cycling Road Race</td>
-                <td>Cycling</td>
-                <td>Champs-Élysées</td>
-            </tr>
-            <tr>
-                <td>July 31, 2024</td>
-                <td>Women's 100m Final</td>
-                <td>Athletics</td>
-                <td>Stade de France</td>
-            </tr>
-            <tr>
-                <td>August 1, 2024</td>
-                <td>Men's Weightlifting 81kg Final</td>
-                <td>Weightlifting</td>
-                <td>Paris Expo Porte de Versailles</td>
-            </tr>
-            <tr>
-                <td>August 2, 2024</td>
-                <td>Women's Tennis Singles Final</td>
-                <td>Tennis</td>
-                <td>Roland Garros</td>
-            </tr>
-            <tr>
-                <td>August 4, 2024</td>
-                <td>Men's 100m Final</td>
-                <td>Athletics</td>
-                <td>Stade de France</td>
-            </tr>
-            <tr>
-                <td>August 5, 2024</td>
-                <td>Women's Volleyball Semi-finals</td>
-                <td>Volleyball</td>
-                <td>Le Bourget</td>
-            </tr>
-            <tr>
-                <td>August 6, 2024</td>
-                <td>Men's Boxing Flyweight Final</td>
-                <td>Boxing</td>
-                <td>North Paris Arena</td>
-            </tr>
-            <tr>
-                <td>August 8, 2024</td>
-                <td>Men's Football Final</td>
-                <td>Football</td>
-                <td>Stade de France</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-<!-- footer starts -->
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <!-- Logo & About -->
-            <div class="col-md-4 text-center text-md-start">
-               <h2 style="font-weight: bold; color: #E63946;">OLYMPICS</h2>
-                <p>Inspiring Excellence, Unity & Passion.</p>
-            </div>
+    <style>
+        body {
+            background: linear-gradient(to bottom, hsl(212, 22%, 25%), #b3d9ff);
+            font-family: 'Poppins', sans-serif;
+            color: #001247;
+            margin: 0;
+            padding: 0;
+        }
 
-            <!-- Navigation -->
-            <div class="col-md-4 text-center">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="gallery.html" target="_self">Gallery</a></li>
-                        <li><a href="faq.html" target="_self">FAQ</a></li>
-                        <li><a href="aboutus.html" target="_self">About Us</a></li>
-                        <li><a href="index.html#news" target="_self">News</a></li>
-                </ul>
-            </div>
+        .upcoming-events {
+            width: 90%;
+            max-width: 1000px;
+            margin: 50px auto;
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+        }
 
-            <!-- Contact & Socials -->
-            <div class="col-md-4 text-center text-md-end">
-                <h5>Contact Us</h5>
-                <p>Email: info@olympics.com</p>
-                <p>Phone: +123 456 7890</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/olympics" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://twitter.com/Olympics" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/olympics" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="text-center">
-            <p class="mb-0">&copy; 2024 Olympics. All Rights Reserved.</p>
-        </div>
-    </div>
-</footer>
-<style>
-body {
-    background: linear-gradient(to bottom, hsl(212, 22%, 25%), #b3d9ff); /* Light blue gradient */
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 1rem;
+        }
 
-.upcoming-events {
-    width: 80%;
-    margin: 50px auto;
-    text-align: center;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
+        thead {
+            background-color: #00274d;
+            color: white;
+        }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #00274d;
-}
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 1.2rem;
-}
+        tbody tr:hover {
+            background-color: #f4f4f4;
+        }
 
-thead {
-    background-color: #00274d;
-    color: rgb(250, 246, 246);
-}
-
-th, td {
-    padding: 15px;
-    border-bottom: 1px solid #ccc;
-}
-
-tbody tr:hover {
-    background-color: #f4f4f4;
-}
-     /* Sticky Navbar */
-     .navbar {
+       /* Sticky Navbar */
+   .navbar {
             background-color: #f8fafc;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             position: sticky;
@@ -234,4 +96,96 @@ tbody tr:hover {
         .social-icons a:hover {
             color: #E63946;
         }
-</style>
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="logoo.png" alt="Olympics Logo" width="50" height="50" class="img-fluid">
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html" target="_self">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html" target="_self">About us</a></li>
+                <li class="nav-item"><a class="nav-link" href="game.html" target="_self">Games</a></li>
+                <li class="nav-item"><a class="nav-link" href="athletes.html" target="_self">Athletes</a></li>
+                <li class="nav-item"><a class="nav-link" href="records.html" target="_self">Records</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html" target="_self">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <section class="upcoming-events">
+        <h2><i>Upcoming Events</i></h2>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Event</th>
+                        <th>Category</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Feb 6, 2026</td><td>Men's Ice Hockey Opening Game</td><td>Ice Hockey</td><td>Milano</td></tr>
+                    <tr><td>Feb 7, 2026</td><td>Women's Snowboard Halfpipe Final</td><td>Snowboarding</td><td>Cortina d'Ampezzo</td></tr>
+                    <tr><td>Feb 8, 2026</td><td>Men's Alpine Skiing Downhill</td><td>Alpine Skiing</td><td>Bormio</td></tr>
+                    <tr><td>Feb 10, 2026</td><td>Women's Curling Round Robin</td><td>Curling</td><td>Milano</td></tr>
+                    <tr><td>Feb 12, 2026</td><td>Men's Speed Skating 1000m Final</td><td>Speed Skating</td><td>Milano</td></tr>
+                    <tr><td>Feb 14, 2026</td><td>Women's Figure Skating Short Program</td><td>Figure Skating</td><td>Cortina d'Ampezzo</td></tr>
+                    <tr><td>Feb 16, 2026</td><td>Men's Biathlon Relay</td><td>Biathlon</td><td>Livigno</td></tr>
+                    <tr><td>Feb 18, 2026</td><td>Women's Freestyle Skiing Moguls</td><td>Freestyle Skiing</td><td>Livigno</td></tr>
+                    <tr><td>Feb 20, 2026</td><td>Men's Skeleton Final</td><td>Skeleton</td><td>Cortina d'Ampezzo</td></tr>
+                    <tr><td>Feb 22, 2026</td><td>Men's Ice Hockey Gold Medal Game</td><td>Ice Hockey</td><td>Milano</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+   <!-- footer starts -->
+   <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Logo & About -->
+            <div class="col-md-4 text-center text-md-start">
+               <h2 style="font-weight: bold; color: #E63946;">OLYMPICS</h2>
+                <p>Inspiring Excellence, Unity & Passion.</p>
+            </div>
+
+            <!-- Navigation -->
+            <div class="col-md-4 text-center">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="gallery.html" target="_self">Gallery</a></li>
+                        <li><a href="faq.html" target="_self">FAQ</a></li>
+                        <li><a href="aboutus.html" target="_self">About Us</a></li>
+                        <li><a href="index.html#news" target="_self">News</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Socials -->
+            <div class="col-md-4 text-center text-md-end">
+                <h5>Contact Us</h5>
+                <p>Email: info@olympics.com</p>
+                <p>Phone: +123 456 7890</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/olympics" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/Olympics" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/olympics" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center">
+            <p class="mb-0">&copy; 2024 Olympics. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
